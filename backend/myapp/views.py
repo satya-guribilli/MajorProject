@@ -14,6 +14,7 @@ from .predict import predict_college_stats, predict_students_placement
 # Initialize API once globally
 genai.configure(api_key="your api key")
 
+genai.configure(api_key="your api key")
 # Delete temp files on startup
 deleteTempFiles()
 
