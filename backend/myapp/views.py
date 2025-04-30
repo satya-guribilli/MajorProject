@@ -12,9 +12,8 @@ from .utils import deleteTempFiles, check_columns_and_datatypes, delete_file
 from .predict import predict_college_stats, predict_students_placement
 
 # Initialize API once globally
-genai.configure(api_key="your api key")
+genai.configure(api_key="AIzaSyAl5RUjoGI7hbggV4JA5Ll3PJDZwqb0j20")
 
-genai.configure(api_key="your api key")
 # Delete temp files on startup
 deleteTempFiles()
 
@@ -24,7 +23,7 @@ def check(request):
 
 
 def compare(compare_list, compare_str):
-    """Check if any items in compare_list exists in compare_str"""
+    """Check if any item in compare_list exists in compare_str"""
     return any(i in compare_str for i in compare_list)
 
 
